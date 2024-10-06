@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.pexels.com/photos/2098427/pexels-photo-2098427.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center center fixed; 
+    background-size:cover;
+    color: #ffffff;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #0fa3e7;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li:hover
+{
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+nav ul li a {
+    color: #12a1f3;
+    text-decoration: none;
+}
+h1 {
+    margin: 0;
+}
+h2 {
+    color: #12b3f3;
+    text-align: center;
+    background-color: #000002d0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+.card {
+    background-color: rgba(2, 7, 5, 0.568);
+    border: 1px solid #12c6f3;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    border-radius: 5px;
+
+}
+.card img:hover
+{
+     scale: 2;
+     transition: 0.5s;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+#rocket {
+    position: fixed;
+    bottom: 10px;
+    width: 250px; /* Adjust as necessary */
+    cursor: pointer;
+    transition: transform 5s ease;
+    transform: rotate(10deg);
+}
+.astronaut {
+    position: relative;
+    left: 50%; /* Center relative to the sun card */
+    top: 25%; /* Adjust based on where you want it relative to the sun card */
+    width: 200px; /* Adjust size as necessary */
+    background-image: url('download__1_hgdd-removebg-preview.png'); /* Use your astronaut image */
+    background-size: cover;
+    animation: moveAstronaut 2s ease-in-out infinite alternate; /* Animation */
+}
+
+@keyframes moveAstronaut {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); } /* Moves up by 20px */
+}
